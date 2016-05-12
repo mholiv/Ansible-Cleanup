@@ -2,18 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Ansible Playbook Cleaner</title>
+    <title>Ansible-Cleanup</title>
 
     <link rel="stylesheet" href="/static/css/base.css" />
 </head>
 <body>
-    <form action="" method="post">
-         <textarea name="bad_data" rows="30" cols="200"></textarea>
-        <p><input type=submit value=Refactor>
-    </form>
+    <div id="content">
+        <h1>Ansible-Cleanup</h1>
 
-    <div>
-        {{ refactored_data|safe }}
+        <form action="" method="post">
+             <textarea name="bad_data" id="text_area"></textarea>
+            <p><input type=submit id="submit_button" value=Refactor>
+        </form>
+
+        <h2>Usage</h2>
+        <p>Paste your playbook containing x=y keypairs into the field. Click the refactor button.</p>
+
+        <h2>About</h2>
+        <p>Ansible-Cleanup was written by Caitlin Campbell.</p>
+        <p>For more information or to file bug reports visit the project github page <a href="https://github.com/mholiv/AnsiblePlaybookCleaner/">here</a>. </p>
     </div>
 </body>
 </html>

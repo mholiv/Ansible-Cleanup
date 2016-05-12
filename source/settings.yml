@@ -1,3 +1,3 @@
 ---
 secret_key: INSERT_RANDOM_UUID_HERE
-debug: True
+debug: False
