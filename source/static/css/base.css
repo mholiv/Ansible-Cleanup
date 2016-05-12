@@ -1,0 +1,23 @@
+#text_area {
+    width: 100%;
+    height: 35em;
+}
+
+body {
+    font-family: sans-serif, SansSerif;
+    padding: 0;
+    margin: 0;
+}
+
+#content {
+    width: 80%;
+    margin:0 auto 4em auto;
+}
+
+h2 {
+    margin-top: 2em;
+}
+
+a {
+    color: inherit;
+}
