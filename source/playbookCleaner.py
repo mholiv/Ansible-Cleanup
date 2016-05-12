@@ -23,17 +23,18 @@ def convert_to_dict(data, trans_worker):
     .. note:: Recursive function to parse the yaml tree
     """
     if isinstance(data, dict):
-        for k, v in data.items():
+        for key, value in data.items():
 
-            if isinstance(v, dict) or isinstance(v, list) or isinstance(v, tuple):
-                convert_to_dict(v, trans_worker)
-
+            if isinstance(value, dict) or isinstance(value, list) or isinstance(value, tuple):
+                convert_to_dict(value, trans_worker)
             else:
-                data[k] = trans_worker(v)
+                if key == 'when':
+                    data[key] = value
+                else:
+                    data[key] = trans_worker(value)
     elif isinstance(data, list) or isinstance(data, tuple):
         for item in data:
             convert_to_dict(item, trans_worker)
-
     return data
 
 
@@ -44,6 +45,7 @@ def trans_func(value):
     :rtype: dict
     .. note:: Worker function called by convert_to_dict to convert the string into a dict after a string has been found
     """
+
     if '=' in value:
 
         temp_dict = {}
@@ -63,7 +65,6 @@ def trans_func(value):
                     m_val = item[split_index+1:]
                     temp_dict[m_key] = m_val
                     last_item_key = m_key
-
                 else:
                     temp_dict[last_item_key] = '%s %s' % (temp_dict[last_item_key], item)
 
