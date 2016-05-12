@@ -65,4 +65,4 @@ Note: In order to launch the web server in the future you will need to reactivat
 - PyYAML 3.11 or later
 
 ## Author
-AnsiblePlaybookCleaner was written by Caitlin Campbell. You can reach her at cacampbe/redhat/com
+Ansible-Cleanup was written by Caitlin Campbell. You can reach her at cacampbe/redhat/com
