@@ -57,7 +57,15 @@ def trans_func(value):
                 temp_dict[m_key] = m_val
                 last_item_key = m_key
             else:
-                temp_dict[last_item_key] = '%s %s' % (temp_dict[last_item_key], item)
+                if '=' in item:
+                    split_index = item.find('=')
+                    m_key = item[:split_index]
+                    m_val = item[split_index+1:]
+                    temp_dict[m_key] = m_val
+                    last_item_key = m_key
+
+                else:
+                    temp_dict[last_item_key] = '%s %s' % (temp_dict[last_item_key], item)
 
         value = temp_dict
     return value
