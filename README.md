@@ -11,11 +11,11 @@ The web app is best used as a uwsgi app behind a proxy like nginx.
 
 Step 1.
 Paste in your bad playbook
-![ScreenShot](https://raw.githubusercontent.com/mholiv/AnsiblePlaybookCleaner/devel/meta/img/shot1.png)
+![ScreenShot](https://raw.githubusercontent.com/mholiv/AnsiblePlaybookCleaner/master/meta/img/shot1.png)
 
 Step 2.
 Click Refactor and view the results
-![ScreenShot](https://raw.githubusercontent.com/mholiv/AnsiblePlaybookCleaner/devel/meta/img/shot2.png)
+![ScreenShot](https://raw.githubusercontent.com/mholiv/AnsiblePlaybookCleaner/master/meta/img/shot2.png)
 
 ## Recommendations
 
