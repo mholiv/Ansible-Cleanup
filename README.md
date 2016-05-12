@@ -3,7 +3,7 @@ Web application that dynamically refractors bad playbooks into good
 
 ## Usage
 
-Launching the `playbookCleaner.py` file independently will start a publicly available web server on port 8080. You can use the software by accessing the hosted page.
+Launching the `playbookCleaner.py` file independently will start a publicly available web server on port 5000. You can use the software by accessing the hosted page.
 
 The web app is best used as a uwsgi app behind a proxy like nginx.
 
