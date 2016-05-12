@@ -4,7 +4,7 @@ A simple way to refactor ansible playbooks
 ## Screen Shots
 
 Step 1.
-Paste in your bad playbook
+Paste in the x=y style playbook
 ![ScreenShot](https://raw.githubusercontent.com/mholiv/AnsiblePlaybookCleaner/master/meta/img/shot1.png)
 
 Step 2.
